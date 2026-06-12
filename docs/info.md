@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-at the start, pulse sequence parameters: rf_pulse_A duration, rf_pulse_B duration, tau duration, and the echo count, are loaded via SPI into the 128-bit register in the chip. Then the chip sequencially generates rf_pulse_A, rf_pulse_B and its echos, rx_gate, and status_busy signals at the assigned pinout 0,1,2,3.       
+At the start, pulse sequence parameters: rf_pulse_A duration, rf_pulse_B duration, tau duration, and the echo count, are loaded via SPI into the 128-bit register in the chip. Then the chip sequencially generates rf_pulse_A, rf_pulse_B and its echos, rx_gate, and status_busy signals at the assigned pinout 0,1,2,3.       
 
 ## How to test
 Assisgn the pulse sequence parameters within a microcontroller and transmit to the project chip via SPI interface. Monitor the output control signals rf_pulse_A, rf_pulse_B, rx_gate, and the status_busy.
