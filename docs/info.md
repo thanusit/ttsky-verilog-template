@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+At the start, pulse sequence parameters: rf_pulse_A duration, rf_pulse_B duration, tau duration, and the echo count, are loaded via SPI into the 128-bit register in the chip. Then the chip sequencially generates rf_pulse_A, rf_pulse_B and its echos, rx_gate, and status_busy signals at the assigned pinout 0,1,2,3.       
 
 ## How to test
 
 Explain how to use your project
 
 ## External hardware
-
+PC/MC
 List external hardware used in your project (e.g. PMOD, LED display, etc), if any
