@@ -13,7 +13,7 @@ module tb;
     reg rst_n;
 
     // Instantiate UUT
-    tt_um_thanusit_cpmg_sequencer uut (
+    tt_um_thanusit_cpmg_pulse_sequencer uut(
         .ui_in(ui_in),
         .uo_out(uo_out),
         .uio_in(uio_in),
