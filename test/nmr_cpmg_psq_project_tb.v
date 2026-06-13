@@ -69,9 +69,9 @@ module tb;
         #100;
 
         // Configuration values setup: 
-        // cfg_tA=10, tau=40, cfg_tB=20, cfg_echo_count=4
+        // cfg_tA=5, tau=20, cfg_tB=10, cfg_echo_count=2
         $display("[TB] Sending configuration packet over SPI interface...");
-        spi_send_word({32'd10, 32'd40, 32'd20, 32'd4});
+        spi_send_word({32'd5, 32'd20, 32'd10, 32'd2});
 
         // Trigger pulse sequencing sequence execution
         $display("[TB] Pulsing START to activate sequence execution.");
