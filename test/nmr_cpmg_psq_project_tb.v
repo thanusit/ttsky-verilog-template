@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module tt_um_thanusit_cpmg_pulse_sequencer_tb;
+module tb;
 
     // Testbench signals
     reg [7:0] ui_in;
@@ -60,8 +60,8 @@ module tt_um_thanusit_cpmg_pulse_sequencer_tb;
         ui_in  = 8'h08; // SS_N initialized high, all others low
         uio_in = 8'h00;
 
-        $dumpfile("tt_um_thanusit_cpmg_pulse_sequencer_tb.vcd");
-        $dumpvars(0, tt_um_thanusit_cpmg_pulse_sequencer_tb);
+        $dumpfile("tb.vcd");
+        $dumpvars(0,tb);
 
         // Reset Sequence
         #100;
