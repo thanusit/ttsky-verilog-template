@@ -6,12 +6,12 @@
 */
 module tb ();
 
-  // Dump the signals to a FST file. You can view it with gtkwave or surfer.
-  initial begin
-    $dumpfile("tb.fst");
-    $dumpvars(0, tb);
-    #1;
-  end
+ // Dump the signals to a FST file. You can view it with gtkwave or surfer.
+ //    initial begin
+ //       $dumpfile("tb.vcd");
+ //       $dumpvars(0, tb);
+ //       #1;
+ //     end
 
   // Wire up the inputs and outputs:
   reg clk;
@@ -93,8 +93,8 @@ module tb ();
         ui_in  = 8'h08; // SS_N initialized high, all others low
         uio_in = 8'h00;
 
-        $dumpfile("tb.vcd");
-        $dumpvars(0,tb);
+//        $dumpfile("tb.vcd");
+//        $dumpvars(0,tb);
 
         // Reset Sequence
         #100;
