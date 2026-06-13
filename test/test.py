@@ -34,6 +34,8 @@ async def run_verilog_for_fixed_duration(dut):
     Waits for a predefined simulation timeframe to give 
     tb.v enough space to complete all its internal operations.
     """
+    # Force initialize the control pins
+    dut.ena.value = 1
     # Adjust 10000 to match your testbench duration requirements
     await Timer(12990, unit="ns") 
     #pass
