@@ -35,7 +35,7 @@ async def run_verilog_for_fixed_duration(dut):
     tb.v enough space to complete all its internal operations.
     """
     # Adjust 10000 to match your testbench duration requirements
-    await Timer(20000, unit="ns") 
+    await Timer(15000, unit="ns") 
 
 # Set the input values you want to test
     #dut.ui_in.value = 20
