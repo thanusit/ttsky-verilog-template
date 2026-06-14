@@ -37,7 +37,7 @@ async def run_verilog_for_fixed_duration(dut):
     # Force initialize the control pins
     dut.ena.value = 1
     # Adjust 10000 to match your testbench duration requirements
-    await Timer(13990, unit="ns") 
+    await Timer(18990, unit="ns") 
     #pass
 # Set the input values you want to test
     #dut.ui_in.value = 20
